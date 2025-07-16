@@ -33,6 +33,7 @@ public class Post {
     private Date addedDate;
 
     @ManyToOne
+    @JoinColumn(name = "category_id") //  Using this name table column name is generated...
     private Category category; // this will be linked to Category table having its id .
 
     @ManyToOne
